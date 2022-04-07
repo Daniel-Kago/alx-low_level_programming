@@ -1,5 +1,5 @@
 #include <stdio.h>                                                                                                             
-                                                                                                                              
+                                                                                                                               
 /**                                                                                                                            
 *main - Entry point                                                                                                            
 *                                                                                                                              
@@ -13,8 +13,8 @@ long long int c;
 char d;                                                                                                                        
 float f;                                                                                                                       
                                                                                                                                
-printf("Size of the char: %lu byte(s)\n",(unsigned long)sizeof(d));                                                            
-printf("Size of an int: %lu byte(s)\n",(unsigned long)sizeof(a));                                                              
-printf("size of long int: %lu byte(s)\n",(unsigned long)sizeof(b));                                                            
-printf("size of long long int: %lu byte(s)\n",(unsignedlong)sizeof(c)); 
+printf("Size of the char: %lu byte(s)\n",sizeof(d));                                                            
+printf("Size of an int: %lu byte(s)\n",sizeof(a));                                                              
+printf("size of long int: %lu byte(s)\n",sizeof(b));                                                            
+printf("size of long long int: %lu byte(s)\n",sizeof(c));                                                        
 }
