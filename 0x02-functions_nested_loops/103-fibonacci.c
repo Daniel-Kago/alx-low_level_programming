@@ -1,30 +1,47 @@
 #include <stdio.h>
 
+
+
 /**
+
  * main - main block
- * Description: computes and prints the sum of all the multiples of 3 or
+
+ * Description: computes and prints even  number < 4,000,000
+
  * 5 below 1024 (excluded), followed by a new line
+
  * Return: 0
+
  */
+
 int main(void)
+
 {
-	int i = 0;
-	long int a = 0, b = 1, next;
 
-	while (i < 50)
+	int a = 0, b = 1, next = 0;
+
+	int sum = 0;
+
+
+
+	while (next < 4000000)
+
 	{
-		next = a + b;
-		a = b;
-		b = next;
-		printf("%lu", next);
 
-		if (i < 49)
-		{
-			printf(", ");
-		}
-		i++;
+		next = a + b;
+
+		a = b;
+
+		b = next;
+
+		if (next % 2 == 0)
+
+			sum += next;
+
 	}
-	putchar('\n');
+
+	printf("%i\n", sum);
+
 	return (0);
-}
+
 }
