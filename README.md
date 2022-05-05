@@ -1,1 +1,1 @@
-Printers arrays strings
+C - malloc, free
